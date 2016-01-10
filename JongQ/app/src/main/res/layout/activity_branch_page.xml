@@ -1,0 +1,192 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:id="@+id/headerImg"
+            android:src="@drawable/header_eatamare"
+            android:scaleType="fitXY"/>
+
+        <com.joooonho.SelectableRoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/av_eatamare"
+            android:scaleType="centerCrop"
+            app:sriv_left_top_corner_radius="16dip"
+            app:sriv_right_top_corner_radius="0dip"
+            app:sriv_left_bottom_corner_radius="48dip"
+            app:sriv_right_bottom_corner_radius="16dip"
+            app:sriv_oval="true"
+            style="@style/Widget.AppCompat.ActionButton" />
+
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerImg"
+            android:layout_marginTop="50dp">
+        </TabWidget>
+    </RelativeLayout>
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp">
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@android:id/tabs">
+
+            <LinearLayout
+                android:id="@+id/branchTab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคกลาง"
+                    android:id="@+id/txt_region1"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BlueTitle"
+                    android:gravity="center_vertical" />
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคตะวันออกเฉียงเหนือ"
+                    android:id="@+id/txt_region2"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/BlueTitle"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region2"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคตะวันตก"
+                    android:id="@+id/txt_region3"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BlueTitle"
+                    android:gravity="center_vertical"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region3"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคเหนือ"
+                    android:id="@+id/txt_region4"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/BlueTitle"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region4"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคตะวันออก"
+                    android:id="@+id/txt_region5"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/BlueTitle"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region5"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ภาคใต้"
+                    android:id="@+id/txt_region6"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BlueTitle"
+                    android:gravity="center_vertical"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/List_Branch_region6"
+                    android:layout_margin="8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/promotionTab"
+                android:layout_width="match_parent"
+                android:layout_height="370dp" >
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/promotionList_gridView"
+                    android:layout_margin="5dp"
+                    android:verticalSpacing="4dp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</TabHost>

@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#ff2e6697</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="colorAccent">#ff2e6697</item>
+
+
+
+
+    </style>
+
+    <style name="AppThemeLogIn" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <color name="white"> #fffefef8 </color>
+    <color name="BlueTitle">#ff32709b</color>
+    <color name="txtBlack">#fc010101</color>
+
+
+
+
+</resources>
+
+<!--
+<item name="colorPrimary">#ff17367b</item>
+<item name="colorPrimaryDark">#a549c6fe</item>
+<item name="colorAccent">#E91E63</item>-->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/navItem1"
+            android:icon="@drawable/ic_currentq"
+            android:title="แสดงคิวร้านอาหารที่จองแล้ว"/>
+
+        <item
+            android:id="@+id/navItem2"
+            android:icon="@drawable/ic_promotion"
+            android:title="ส่วนลด/โปรโมชั่น"/>
+
+        <item
+            android:id="@+id/navItem3"
+            android:icon="@drawable/ic_setting"
+            android:title="ตั้งค่า"/>
+        <item
+            android:id="@+id/navItem4"
+            android:icon="@drawable/ic_power"
+            android:title="ออกจากระบบ"
+           />
+    </group>
+
+</menu>

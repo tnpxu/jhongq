@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:weightSum="1"
+                android:layout_gravity="center">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_gravity="center|left|top"
+                    android:layout_marginBottom="36dp"
+                    android:id="@+id/ImageView_PicProfile"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    app:sriv_left_top_corner_radius="16dip"
+                    app:sriv_right_top_corner_radius="0dip"
+                    app:sriv_left_bottom_corner_radius="48dip"
+                    app:sriv_right_bottom_corner_radius="16dip"
+                    app:sriv_border_width="1dip"
+                    app:sriv_border_color="@color/white"
+                    app:sriv_oval="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:text="UserName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:id="@+id/textView_UserName"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#fc010101"
+                    android:layout_marginTop="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.50">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="คะแนนสะสม:"
+                    android:id="@+id/textView_point"
+                    android:layout_gravity="center|bottom"
+                    android:textStyle="bold"
+                    android:textColor="#fc010101"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.10"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center"
+                    android:textColor="@color/BlueTitle"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="262dp"
+            android:layout_height="match_parent"
+            android:text="แก้ไขข้อมูลผู้ใช้"
+            android:id="@+id/nav_bnt_edit"
+            android:backgroundTint="@color/BlueTitle"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center|bottom"
+            android:background="@color/BlueTitle"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

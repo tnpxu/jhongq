@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">JhongQ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1635986423310046</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_list_rest">list_rest</string>
+
+    <string name="title_section1">Gril</string>
+    <string name="title_section2">Shabu</string>
+    <string name="title_section3">Seafood</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_nav_setting_page">nav_setting_page</string>
+    <string name="title_activity_edit_pro_file__page">EditProFile</string>
+    <string name="title_activity_show_q">ShowQ</string>
+    <string name="title_activity_promotion_page">Promotion</string>
+    <string name="title_activity_show_q__after_reserve">ShowQ_AfterReserve</string>
+    <string name="title_activity_branch_tab">BranchTab</string>
+    <string name="title_activity_tab_branch">tab_branch</string>
+    <string name="title_activity_tab_promotion">tab_promotion</string>
+
+</resources>
